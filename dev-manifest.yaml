@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: alex-api
-        image: us-docker.pkg.dev/my-project-1st-416402/alex-api
+        image: us-docker.pkg.dev/my-project-1st-416402/alex-api/api-tests
         ports:
           - containerPort: 3000
         resources:
