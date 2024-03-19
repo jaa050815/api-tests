@@ -14,29 +14,29 @@ spec:
     spec:
       containers:
         - name: alex-api
-        image: us-docker.pkg.dev/my-project-1st-416402/alex-api/api-tests
-        ports:
-          - containerPort: 3000
-        resources:
-          limits:
-            cpu: ".5"
-            memory: "500Mi"
-          requests:
-            cpu: ".25"
-            memory: "250Mi"
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 3000
-            scheme: HTTP
-          failureThreshold: 1
-          periodSeconds: 10
-          timeoutSeconds: 10
-        startupProbe:
-          httpGet:
-            path: /
-            port: 3000
-            scheme: HTTP
-          failureThreshold: 1
-          periodSeconds: 10
-          timeoutSeconds: 10
+          image: us-docker.pkg.dev/my-project-1st-416402/alex-api/api-tests
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: ".5"
+              memory: "500Mi"
+            requests:
+              cpu: ".25"
+              memory: "250Mi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+              scheme: HTTP
+            failureThreshold: 1
+            periodSeconds: 10
+            timeoutSeconds: 10
+          startupProbe:
+            httpGet:
+              path: /
+              port: 3000
+              scheme: HTTP
+            failureThreshold: 1
+            periodSeconds: 10
+            timeoutSeconds: 10
