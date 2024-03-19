@@ -19,7 +19,7 @@ spec:
             - containerPort: 3000
           resources:
             limits:
-              cpu: ".5"
+              cpu: "0.5"
               memory: "500Mi"
             requests:
               cpu: ".25"
@@ -37,6 +37,6 @@ spec:
               path: /
               port: 3000
               scheme: HTTP
-            failureThreshold: 1
+            failureThreshold: 30
             periodSeconds: 10
             timeoutSeconds: 10
