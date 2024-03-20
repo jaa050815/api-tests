@@ -7,8 +7,8 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: cluster-1    # Add your cluster name here.
-  GKE_ZONE: us-central1-c   # Add your cluster zone here.
+  GKE_CLUSTER:  scrum-team4-cit262    # Add your cluster name here.
+  GKE_ZONE: africa-south1   # Add your cluster zone here.
   DEPLOYMENT_NAME: alex-api # Add your deployment name here.
   IMAGE: alex-api
 
